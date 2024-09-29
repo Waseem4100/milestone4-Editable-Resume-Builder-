@@ -93,8 +93,7 @@ document.getElementById(`resumeform`)?.addEventListener(`submit`, function(event
            const profilePictureURL = profilePictureFile ? URL.createObjectURL(profilePictureFile) : '';
 
      //** *********************************************************************************/
-        //    const username = usernameElement.value;
-        //    const uniquepath = `resume/${username.replace(/\s+/g,'_')}_cv.html`
+       
    
    
    
@@ -127,31 +126,27 @@ document.getElementById(`resumeform`)?.addEventListener(`submit`, function(event
         </div>
         <br>
 
-        <div id="education">
+         <div id="education">
+       
             <h2>EDUCATION</h2>
             <ul style=" font-weight: bold;">
 
-            <li>${education1} </li> 
-            <li>${education2} </li> 
-            <li>${education3} </li> 
-            
-           
-
-
-              </ul>
+            <li>Degree :${education1} </li> 
+            <li> Institute : ${education2} </li> 
+            <li>Grade : ${education3} </li> 
+             </ul>
         </div>
 
         <div id="experience">
             <h2>EXPERIENCE</h2>
             <ul style=" font-weight: bold;">
-                <li>${experience1}</li>
-                <li>${experience2}</li>
-                <li>${experience3}</li>
+                <li> Company Name :${experience1}</li>
+                <li>Position : ${experience2}</li>
+                <li>Duration : ${experience3}</li>
             </ul>
 
              
         </div>
-
 
      
        <div id="skills">
@@ -167,8 +162,7 @@ document.getElementById(`resumeform`)?.addEventListener(`submit`, function(event
 </div>
 
 
- </div>
-   
+
 
 
 

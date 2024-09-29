@@ -48,8 +48,6 @@ var _a;
         const profilePictureFile = (_a = profilePictureinput.files) === null || _a === void 0 ? void 0 : _a[0];
         const profilePictureURL = profilePictureFile ? URL.createObjectURL(profilePictureFile) : '';
         //** *********************************************************************************/
-        //    const username = usernameElement.value;
-        //    const uniquepath = `resume/${username.replace(/\s+/g,'_')}_cv.html`
         //create resume
         const resumeoutput = `
 
@@ -79,31 +77,27 @@ var _a;
         </div>
         <br>
 
-        <div id="education">
+         <div id="education">
+       
             <h2>EDUCATION</h2>
             <ul style=" font-weight: bold;">
 
-            <li>${education1} </li> 
-            <li>${education2} </li> 
-            <li>${education3} </li> 
-            
-           
-
-
-              </ul>
+            <li>Degree :${education1} </li> 
+            <li> Institute : ${education2} </li> 
+            <li>Grade : ${education3} </li> 
+             </ul>
         </div>
 
         <div id="experience">
             <h2>EXPERIENCE</h2>
             <ul style=" font-weight: bold;">
-                <li>${experience1}</li>
-                <li>${experience2}</li>
-                <li>${experience3}</li>
+                <li> Company Name :${experience1}</li>
+                <li>Position : ${experience2}</li>
+                <li>Duration : ${experience3}</li>
             </ul>
 
              
         </div>
-
 
      
        <div id="skills">
@@ -119,8 +113,7 @@ var _a;
 </div>
 
 
- </div>
-   
+
 
 
 
